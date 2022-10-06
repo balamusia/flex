@@ -1,15 +1,37 @@
 <style>
 
+  #secret {
+    display: none;
+  }
+  
   nav{
     display: flex;
+    flex-direction: row;
     background-color: pink;
     justify-content: space-around;
+  }
+  
+  @media (max-width:415px) {
+    
+    nav{
+      flex-direction: column;
+      
+    }
+    
+    a {
+      color: green;
+    }
+    
+    
+    
   }
 
 
 </style>
 
-
+<h1 id="secret">
+  secret message
+</h1>
 
 
 <nav>
